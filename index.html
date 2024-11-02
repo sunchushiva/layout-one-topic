@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topic layout</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <style>
+    .box-shadow {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    .selected {
+      border-bottom: 1.5px solid black;
+    }
+  </style>
+  <body>
+    <!-- Navbar, main components  -->
+
+    <div class="parent mb-16">
+      <div
+        class="w-full h-[80vh] bg-gradient-to-t from-teal-700 to-teal-300"
+      ></div>
+      <div
+        class="w-full h-[20vh] bg-teal-800 rounded-bl-3xl rounded-br-3xl"
+      ></div>
+
+      <div class="absolute top-0 w-full">
+        <!-- Navbar component -->
+        <nav
+          class="flex justify-around items-center border-b-[1px] border-gray-300 p-4 px-0 mb-12"
+        >
+          <div>
+            <h1 class="uppercase font-sans font-bold text-3xl tracking-wide">
+              topic
+            </h1>
+          </div>
+          <div class="w-1/2 flex justify-between items-center">
+            <div>
+              <a
+                class="capitalize font-sans font-medium text-base hover:text-gray-100"
+                href="/"
+                >home</a
+              >
+            </div>
+            <div>
+              <a
+                class="capitalize font-sans font-medium text-base hover:text-gray-100"
+                href="/"
+                >browse topics</a
+              >
+            </div>
+            <div>
+              <a
+                class="capitalize font-sans font-medium text-base hover:text-gray-100"
+                href=""
+                >how it works</a
+              >
+            </div>
+            <div>
+              <a
+                class="capitalize font-sans font-medium text-base hover:text-gray-100"
+                href=""
+                >faqs</a
+              >
+            </div>
+            <div>
+              <a
+                class="capitalize font-sans font-medium text-base hover:text-gray-100"
+                href=""
+                >contact</a
+              >
+            </div>
+            <div>
+              <a
+                class="capitalize font-sans font-medium text-base hover:text-gray-100"
+                href=""
+                >pages</a
+              >
+            </div>
+          </div>
+          <div class="bg-white rounded-[50%] p-2">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z"
+                fill="#000000"
+              />
+              <path
+                d="M14 12C14 10.3431 12.6569 9 11 9H5C3.34315 9 2 10.3431 2 12V15H14V12Z"
+                fill="#000000"
+              />
+            </svg>
+          </div>
+        </nav>
+
+        <!-- Header component  -->
+
+        <main class="flex flex-col gap-y-10 mb-8">
+          <!-- Text container -->
+          <div class="flex flex-col gap-y-2">
+            <h2 class="capitalize text-center text-5xl font-bold text-white">
+              discover. learn. enjoy
+            </h2>
+            <p class="text-center text-lg font-semibold text-teal-950">
+              platform for creatives around the world
+            </p>
+          </div>
+          <!-- Search container  -->
+          <div class="relative w-1/2 m-auto">
+            <svg
+              class="absolute left-3 top-3"
+              width="20px"
+              height="25px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                stroke="#808080"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <input
+              class="w-full p-3 px-10 rounded-r-full rounded-l-full outline-none"
+              type="text"
+              placeholder="Design, Code, Marketing, Finance ..."
+            />
+            <button
+              class="font-semibold tracking-wide capitalize text-white bg-teal-600 p-2 px-6 rounded-r-full rounded-l-full absolute right-2 top-1"
+            >
+              search
+            </button>
+          </div>
+        </main>
+
+        <!-- Cards component  -->
+        <section class="w-10/12 m-auto grid grid-cols-3 gap-x-8">
+          <div class="col-start-1 col-end-2 rounded-lg bg-white p-4">
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="font-semibold capitalize text-lg">web design</h3>
+              <span class="bg-sky-500 p-2 py-1 rounded-sm text-white">14</span>
+            </div>
+            <div>
+              <p class="w-5/6 text-justify">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Repellat, voluptas reiciendis aliquam
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-start-2 col-end-4 rounded-lg bg-finance bg-cover bg-no-repeat p-4"
+          >
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="font-semibold capitalize text-lg text-white">
+                finance
+              </h3>
+              <span class="bg-sky-500 p-2 py-1 rounded-sm text-white">25</span>
+            </div>
+            <div>
+              <p class="w-3/5 text-justify mb-6 text-white">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Repellat, voluptas reiciendis aliquam
+              </p>
+              <button
+                class="font-semibold text-sm capitalize text-white bg-teal-500 p-2 px-4 rounded-r-full rounded-l-full"
+              >
+                learn more
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Browse component  -->
+
+    <section class="w-10/12 m-auto mb-16">
+      <!-- Heading container  -->
+      <div>
+        <h3 class="text-center capitalize font-bold text-2xl mb-10">
+          browse topics
+        </h3>
+      </div>
+      <!-- Menu container  -->
+      <div class="w-1/2 m-auto flex justify-between mb-8">
+        <div
+          class="text-center w-full capitalize font-normal text-base border-b-[1px] border-gray-400 pb-2 selected"
+        >
+          design
+        </div>
+        <div
+          class="text-center w-full capitalize font-normal text-base border-b-[1px] border-gray-400 pb-2"
+        >
+          marketing
+        </div>
+        <div
+          class="text-center w-full capitalize font-normal text-base border-b-[1px] border-gray-400 pb-2"
+        >
+          finance
+        </div>
+        <div
+          class="text-center w-full capitalize font-normal text-base border-b-[1px] border-gray-400 pb-2"
+        >
+          music
+        </div>
+        <div
+          class="text-center w-full capitalize font-normal text-base border-b-[1px] border-gray-400 pb-2"
+        >
+          education
+        </div>
+      </div>
+      <!-- Cards container  -->
+      <div class="grid grid-cols-3 gap-x-6">
+        <div class="col-start-1 col-end-2 bg-white box-shadow p-4 rounded-lg">
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="font-semibold capitalize text-lg">web design</h3>
+            <span class="bg-sky-500 p-2 py-1 rounded-sm text-white">14</span>
+          </div>
+          <div>
+            <p class="w-5/6 text-justify">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repellat, voluptas reiciendis aliquam
+            </p>
+          </div>
+        </div>
+        <div class="col-start-2 col-end-3 bg-white box-shadow p-4 rounded-lg">
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="font-semibold capitalize text-lg">graphic</h3>
+            <span class="bg-sky-500 p-2 py-1 rounded-sm text-white">75</span>
+          </div>
+          <div>
+            <p class="w-5/6 text-justify">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repellat, voluptas reiciendis aliquam
+            </p>
+          </div>
+        </div>
+        <div class="col-start-3 col-end-4 bg-white box-shadow p-4 rounded-lg">
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="font-semibold capitalize text-lg">logo design</h3>
+            <span class="bg-sky-500 p-2 py-1 rounded-sm text-white">100</span>
+          </div>
+          <div>
+            <p class="w-5/6 text-justify">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repellat, voluptas reiciendis aliquam
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ component  -->
+
+    <section class="w-10/12 m-auto mb-16">
+      <!-- Heading container  -->
+      <div>
+        <h3 class="text-center capitalize font-bold text-2xl mb-10">
+          frequently asked questions
+        </h3>
+      </div>
+
+      <!-- Content container  -->
+      <div class="flex justify-between items-center gap-x-8">
+        <!-- Image container  -->
+        <div class="w-1/2">
+          <img class="w-full" src="./images/faq.svg" alt="faq-illustration" />
+        </div>
+        <!-- Questions container  -->
+        <div class="w-1/2 flex flex-col gap-y-4">
+          <!-- First child -->
+          <div>
+            <!-- Question container  -->
+            <div
+              class="flex justify-between items-center bg-teal-100 p-2 pl-4 rounded-md mb-3"
+            >
+              <h4 class="capitalize font-semibold text-lg">
+                what is topic listing?
+              </h4>
+              <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                  fill="#000000"
+                />
+              </svg>
+            </div>
+            <!-- Answer container  -->
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                rerum repudiandae iste numquam mollitia, delectus molestias
+                fugit! Repudiandae accusantium cum maxime ullam nihil,
+                perferendis nisi, impedit at eaque dignissimos possimus?
+              </p>
+            </div>
+          </div>
+          <!-- Second child  -->
+          <div>
+            <!-- Question container  -->
+            <div
+              class="flex justify-between items-center p-2 pl-4 rounded-md mb-3"
+            >
+              <h4 class="capitalize font-semibold text-lg">
+                does it need to paid?
+              </h4>
+              <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                  fill="#000000"
+                />
+              </svg>
+            </div>
+            <!-- Answer container  -->
+            <div>
+              <p class="hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                rerum repudiandae iste numquam mollitia, delectus molestias
+                fugit! Repudiandae accusantium cum maxime ullam nihil,
+                perferendis nisi, impedit at eaque dignissimos possimus?
+              </p>
+            </div>
+          </div>
+          <!-- Third child  -->
+          <div>
+            <!-- Question container  -->
+            <div
+              class="flex justify-between items-center p-2 pl-4 rounded-md mb-3"
+            >
+              <h4 class="capitalize font-semibold text-lg">
+                how to find a topic?
+              </h4>
+              <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                  fill="#000000"
+                />
+              </svg>
+            </div>
+            <!-- Answer container  -->
+            <div>
+              <p class="hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                rerum repudiandae iste numquam mollitia, delectus molestias
+                fugit! Repudiandae accusantium cum maxime ullam nihil,
+                perferendis nisi, impedit at eaque dignissimos possimus?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get in touch component  -->
+
+    <section class="w-10/12 m-auto mb-16 bg-gray-100 p-4 py-8 rounded-lg">
+      <!-- Heading container  -->
+      <div>
+        <h3 class="text-center font-bold text-2xl mb-10">Get in touch</h3>
+      </div>
+
+      <!-- Content container  -->
+
+      <div class="flex justify-around items-center">
+        <div class="w-2/6">
+          <div class="border-b-[1px] border-gray-300 pb-4 mb-4">
+            <h4 class="capitalize font-bold text-xl mb-2">dubai office</h4>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              blanditiis enim voluptatem. Sed dolorem fugiat nulla modi porro!
+            </p>
+          </div>
+          <div>
+            <p>Phone: <span class="text-teal-500">987601234</span></p>
+            <p>Email: <span class="text-teal-500">example@gmail.com</span></p>
+          </div>
+        </div>
+        <div class="w-2/6">
+          <div class="border-b-[1px] border-gray-300 pb-4 mb-4">
+            <h4 class="capitalize font-bold text-xl mb-2">head office</h4>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              blanditiis enim voluptatem. Sed dolorem fugiat nulla modi porro!
+            </p>
+          </div>
+          <div>
+            <p>Phone: <span class="text-teal-500">987601234</span></p>
+            <p>Email: <span class="text-teal-500">example@gmail.com</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer component  -->
+    <footer
+      class="border-b-4 border-teal-700 flex justify-around items-start p-4 px-16"
+    >
+      <div class="w-2/6">
+        <h4 class="uppercase font-sans font-bold text-2xl tracking-wide">
+          topic
+        </h4>
+      </div>
+      <div class="w-2/6">
+        <h4 class="capitalize font-bold text-xl text-teal-800 mb-3">
+          resources
+        </h4>
+        <p class="text-teal-500 capitalize">home</p>
+        <p class="text-teal-500 capitalize">how it works</p>
+        <p class="text-teal-500 capitalize">faqs</p>
+        <p class="text-teal-500 capitalize">contact</p>
+      </div>
+      <div class="w-2/6">
+        <h4 class="capitalize font-bold text-xl text-teal-800 mb-3">
+          information
+        </h4>
+        <p class="text-teal-500 capitalize">983270910</p>
+        <p class="text-teal-500">example@gmail.com</p>
+      </div>
+      <div class="w-2/6">
+        <select
+          class="capitalize bg-teal-800 text-white py-1 p-2 rounded-sm outline-none cursor-pointer mb-3"
+        >
+          <option class="bg-white text-black" value="english">english</option>
+          <option class="bg-white text-black" value="hindi">hindi</option>
+          <option class="bg-white text-black" value="marathi">marathi</option>
+        </select>
+        <p class="text-justify">
+          Copyright: the exclusive legal right to reproduce, publish, sell, or
+          distribute the matter and form of something
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
